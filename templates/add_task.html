@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ADD TASK
+        </title>
+    </head>
+
+    <body>
+        <h1>{{ urs }} Add a new Task!
+        </h1>
+        <div>
+            <form action="" method="post">
+                <label for="Task">Task:</label><br>
+                <input type="text" id="task" name="task"><br>
+                <label for="Stime">Start Time:</label><br>
+                <input type="time" id="Stime" name="Stime">
+                <label for="Etime">Start Time:</label><br>
+                <input type="time" id="Etime" name="Etime">
+                
+                <input type="submit" value="SUMMIT">
+
+            </form>
+        </div>
+        <a href="{{ url_for('index', myurs=urs) }}">go to home page</a>
+
+    </body>
+</html>
