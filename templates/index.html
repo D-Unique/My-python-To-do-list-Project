@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            HOME PAGE
-        </title>
-    </head>
+{%extends 'base.html'%}
 
-    <body>
-        <h1>{{ urs1 }} Welcome to your Todo list</h1>
-        <a href="{{ url_for('task',  Turs=urs1) }}">Add Task</a>
-      
+{%block  content%}
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                HOME PAGE
+            </title>
+        </head>
 
-    </body>
-</html>
+        <body>
+            <h1>{{ urs1 }} Welcome to your Todo list</h1>
+            <a href="{{ url_for('task',  Turs=urs1) }}">Add Task</a>
+        
+
+        </body>
+    </html>
+{%endblock%}
